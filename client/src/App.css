@@ -1,0 +1,283 @@
+.App {
+  background-color: white;
+  color: #5d6d7e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.myBlues {
+  color: #0c71c3;
+  color: #1c3f95;
+  color: #0daddd;
+}
+.myGreysandBlacks {
+  color: #191414;
+  color: #212f3d;
+  color: #f0f0f0;
+}
+.myRed {
+  color: #c30c16;
+}
+
+span {
+  color: #212f3d;
+  font-weight: 500;
+}
+h1 {
+  color: #212f3d;
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+h4 {
+  font-size: 1rem;
+  color: #1c3f95;
+  font-weight: 900;
+  margin: 0;
+}
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0daddd;
+}
+
+form,
+.container, .page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.section {
+  margin: 30px 0 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 30px 20px 20px;
+  border: 1px solid #212f3d;
+  border-radius: 15px;
+  position: relative;
+}
+.division {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+form .section h3 {
+  margin: 0;
+}
+.section #title {
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  top: -28px;
+  left: 20px;
+  padding: 10px 20px;
+}
+input,
+textarea,
+select {
+  flex: 1;
+  height: 25px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #5d6d7e;
+  color: #5d6d7e;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+select option {
+  border-radius: 5px;
+}
+select {
+  height: 50px;
+}
+textarea {
+  resize: none;
+}
+label {
+  color: #212f3d;
+  font-size: 18px;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.row * {
+  flex: 1;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 2px solid #0daddd;
+}
+button {
+  margin-top: 10px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background-color: #1c3f95;
+  padding: 10px 20px;
+  transition: 0.2s;
+}
+button:hover {
+  transform: translate(0, -3px);
+}
+button:disabled {
+  transform: translate(0);
+}
+.hide{
+  display: none;
+}
+.warning{
+  background-color: #c30c16;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    color: #212f3d;
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  form,
+  .container {
+    margin-top: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input,
+  textarea,
+  select {
+    border-radius: 10px;
+  }
+  form button {
+    width: 200px;
+  }
+  .row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #212f3d; /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  border: 1px solid #fff; /* creates padding around scroll thumb */
+}
